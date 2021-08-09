@@ -4,6 +4,15 @@ export default {
     type: 'document',
     fields: [
       {
+        name: 'informationSectionInstructions',
+        type: 'note',
+        options: {
+          headline: 'Careful!',
+          message: `These sections correspond to text and pictures that are considered more permanent on the website. You may revise the text and change the pictures, but if you delete these sections there will be gaps in the website with missing content.`,
+          tone: 'caution'
+        }
+      },
+      {
         title: 'Name',
         name: 'name',
         type: 'string',
@@ -30,7 +39,8 @@ export default {
       {
         title: "Description",
         name: "description",
-        type: "blockContent"
+        type: "blockContent",
+        description: 'Feel free to update this as needed.'
       },
       {
         title: 'Main image',

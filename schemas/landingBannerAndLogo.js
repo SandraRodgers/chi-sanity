@@ -5,6 +5,15 @@ export default {
     type: "document",
     fields: [
       {
+        name: 'fosterFormQuestionInstructions',
+        type: 'note',
+        options: {
+          headline: 'Careful!',
+          message: `This is an important part of the website. If you are going to change the logo or banner, be sure about your decision. Do not delete logos or banners unless you are very sure about it. <p>Only ONE logo and ONE banner should be set to <b>current</b>.</p>`,
+          tone: 'caution'
+        }
+      },
+      {
         title: "Image Name",
         name: "imageName",
         type: "string",

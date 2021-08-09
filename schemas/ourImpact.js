@@ -4,6 +4,15 @@ export default {
     type: 'document',
     fields: [
       {
+        name: 'ourImpactInstructions',
+        type: 'note',
+        options: {
+          headline: 'Careful!',
+          message: `These sections correspond to text and pictures that are considered more permanent on the website. You may revise the text and change the pictures, but if you delete these sections there will be gaps in the website with missing content.<p>Feel free to update the facts with interesting information about CRT's impact.</p><p>Location of content: <b>Landing Page</b>.</p>`,
+          tone: 'caution'
+        }
+      },
+      {
         title: 'Name',
         name: 'name',
         type: 'string',
@@ -13,15 +22,6 @@ export default {
         title: 'Title',
         name: 'title',
         type: 'string',
-      },
-      {
-        title: 'Slug',
-        name: 'slug',
-        type: 'slug',
-        description: 'Click generate to create slug',
-        options: {
-          source: doc => `${doc.title}`
-        },
       },
       {
         title: "Impact Example One Header",
@@ -44,6 +44,30 @@ export default {
         type: "text"
       },
       {
+        title: 'Impact Example One Fact',
+        name: 'impactOneFact',
+        type: 'text',
+        description:'Keep the statements to one to two short sentences (around 120 characters).'
+      },
+      {
+        title: 'Impact Example Two Fact',
+        name: 'impactTwoFact',
+        type: 'text',
+        description:'Keep the statements to one to two short sentences (around 120 characters).'
+      },
+      {
+        title: 'Impact Example Three Fact',
+        name: 'impactThreeFact',
+        type: 'text',
+        description:'Keep the statements to one to two short sentences (around 120 characters).'
+      },
+      {
+        title: 'Impact Example Four Fact',
+        name: 'impactFourFact',
+        type: 'text',
+        description:'Keep the statements to one to two short sentences (around 120 characters).'
+      },
+      {
         title: 'Impact Example One Image',
         name: 'impactOneImage',
         type: 'image',
@@ -62,26 +86,6 @@ export default {
         title: 'Impact Example Four Image',
         name: 'impactFourImage',
         type: 'image',
-      },
-      {
-        title: 'Impact Example One Fact',
-        name: 'impactOneFact',
-        type: 'text',
-      },
-      {
-        title: 'Impact Example Two Fact',
-        name: 'impactTwoFact',
-        type: 'text',
-      },
-      {
-        title: 'Impact Example Three Fact',
-        name: 'impactThreeFact',
-        type: 'text',
-      },
-      {
-        title: 'Impact Example Four Fact',
-        name: 'impactFourFact',
-        type: 'text',
       },
     ],
   }

@@ -5,6 +5,15 @@ export default {
     type: "document",
     fields: [
       {
+        name: 'fosterFormQuestionInstructions',
+        type: 'note',
+        options: {
+          headline: 'Instructions',
+          message: `Create a question for the Foster Application. You may choose <b>input</b> or <b>select</b> type. <p>Afterwards, you may change the order of all the questions by going to the top of the page and clicking <b>Order Documents</b>. After you drag the questions into the order you want them to be on the form, return to the <b>Desk</b> and if you don't see the questions in order, go back to the <b>Content</b> section (left column), click on <b>Foster Application Form Questions</b>, and then click on the three dots in the right corner and select <b>Sort By Order</b>. That will put the questions in correct order.</p>`,
+          tone: 'positive'
+        }
+      },
+      {
         title: "Question",
         name: "question",
         type: "string",

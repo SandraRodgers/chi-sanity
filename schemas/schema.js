@@ -7,6 +7,8 @@ import schemaTypes from 'all:part:@sanity/base/schema-type';
 // We import object and document schemas
 import blockContent from './blockContent';
 import chihuahua from './chihuahua';
+import chihuahuasSE from './chihuahuasSE';
+import chihuahuasMW from './chihuahuasMW';
 import region from './region';
 import information from './information';
 import successStory from './successStory';
@@ -17,6 +19,8 @@ import happyTails from './happyTails';
 import mostInNeed from './mostInNeed';
 import formQuestionAdoptionApplication from './formQuestionAdoptionApplication';
 import formQuestionFosterApplication from './formQuestionFosterApplication';
+import newsletter from './newsletter';
+import adoptableDogs from './adoptableDogs';
 
 
 // Then we give our schema to the builder and provide the result to Sanity
@@ -28,16 +32,20 @@ export default createSchema({
   types: schemaTypes.concat([
     /* Your types here! */
     chihuahua,
-    blockContent,
-    region,
-    information,
-    successStory,
+    chihuahuasSE,
+    chihuahuasMW,
+    formQuestionAdoptionApplication,
+    formQuestionFosterApplication,
     event,
+    happyTails,
+    successStory,
+    mostInNeed,
+    newsletter,
     ourImpact,
     landingBannerAndLogo,
-    mostInNeed,
-    happyTails,
-    formQuestionAdoptionApplication,
-    formQuestionFosterApplication
+    information,
+    blockContent,
+    region,
+    adoptableDogs
   ]),
 })
