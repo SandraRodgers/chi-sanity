@@ -1,3 +1,17 @@
+import React from 'react'
+
+// const highlightRender = props => (
+//   <span style={{ backgroundColor: 'yellow' }}>{props.children}</span>
+// )
+
+// const nestedRender = props => (
+//   <li style={{ backgroundColor: 'lightgray' }}>{props.children}</li>
+// )
+
+// const nestedBulletListItem = props => (
+//   <li class="nested">{props.children}</li>
+// )
+
 /**
  * This is the schema definition for the rich text fields used for
  * for this blog studio. When you import it in schemas.js it can be
@@ -30,7 +44,11 @@ export default {
         ],
         lists: [
           {title: 'Bullet', value: 'bullet'},
-          {title: 'Number', value: 'number'}
+          {title: 'Number', value: 'number'},
+          // {title: 'NestedBullet', value: 'nested', blockEditor: {
+          //   icon: () => 'N', render: nestedRender
+          // }},
+          
         ],
         // Marks let you mark up inline text in the block editor.
         marks: {
@@ -39,6 +57,12 @@ export default {
           decorators: [
             {title: 'Strong', value: 'strong'},
             {title: 'Emphasis', value: 'em'},
+            // {title: 'Highlight', value: 'highlight', blockEditor: {
+            //   icon: () => 'H', render: highlightRender
+            // }},
+            // {title: 'NestedBullet', value: 'nested', blockEditor: {
+            //   icon: () => 'N', render: nestedRender
+            // }},
           ],
           // Annotations can be any object structure – e.g. a link or a footnote.
           annotations: [
@@ -52,6 +76,11 @@ export default {
                   name: 'href',
                   type: 'url',
                 },
+                {
+                  title: 'Open in new window',
+                  name: 'newtab',
+                  type: 'boolean'
+                }
               ],
             },
           ],
@@ -65,6 +94,7 @@ export default {
         options: {hotspot: true},
         
       },
+      
     ],
   }
   

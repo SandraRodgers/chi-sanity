@@ -28,6 +28,11 @@ export default {
         type: 'string',
       },
       {
+        title: 'Section',
+        name: 'section',
+        type: 'string',
+      },
+      {
         title: 'Slug',
         name: 'slug',
         type: 'slug',
